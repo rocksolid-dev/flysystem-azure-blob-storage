@@ -1,6 +1,6 @@
 {
   "name": "rocksolid/flysystem-azure-blob-storage",
-  "description": "Azure Blob Storage adapter for Laravel Flysystem",
+  "description": "Azure Blob Storage adapter for Flysystem v3",
   "type": "library",
   "license": "MIT",
   "keywords": [
@@ -19,8 +19,6 @@
   "require": {
     "php": "^8.2",
     "guzzlehttp/guzzle": "^7.0",
-    "illuminate/filesystem": "^11.0",
-    "illuminate/support": "^11.0",
     "league/flysystem": "^3.0",
     "league/mime-type-detection": "^1.16.0"
   },
@@ -36,13 +34,6 @@
   "autoload-dev": {
     "psr-4": {
       "Rocksolid\\Flysystem\\AzureBlobStorage\\Tests\\": "tests/"
-    }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Rocksolid\\Flysystem\\AzureBlobStorage\\AzureBlobStorageServiceProvider"
-      ]
     }
   },
   "minimum-stability": "stable",
